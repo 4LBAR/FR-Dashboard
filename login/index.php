@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
+  <title>PT.MEISSA BERKAH</title>
+  <link rel="icon" href="image.png">
+  <link rel="stylesheet" href="style.css">
   <!-- Bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="styles.css"> <!-- Menghubungkan file CSS -->
-  <!-- Chart.js CDN untuk grafik -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body>
 
-  <!-- Navigasi di atas -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body class="">
+  <nav class="navbar navbar-expand-lg card card text-bg-success">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Dashboard</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="nav-link active ms-2" aria-current="page" href="./index.php">
+        <img src="image.png" alt="logo" width="35" height="35">
+      </a>
+      <h3 class="text-dark m-2">PT.MEISSA BERKAH</h3>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home"></i> Home</a>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <span class="navbar-nav ms-auto mb-0">
+          <li class="nav-item nav-link ms-1">
+            <a class="btn btn-danger" href="logout.php">Log out</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-users"></i> Users</a>
+          <li class="nav-item nav-link ms-1">
+            <a class="btn btn-outline-primary" href="login.php">Login</a> <!-- Link Login -->
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-chart-line"></i> Sales</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-cog"></i> Settings</a>
-          </li>
-        </ul>
+        </span>
       </div>
     </div>
   </nav>
 
   <!-- Dashboard Konten -->
-  <div class="container mt-5">
+  <div class="container mt-5 ">
     <div class="row">
       <div class="col-lg-6">
         <!-- Grafik Penjualan -->
@@ -147,4 +145,5 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

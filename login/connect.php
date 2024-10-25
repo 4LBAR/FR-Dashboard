@@ -1,12 +1,12 @@
 <?php
 $host = 'localhost';
-$db = 'pkl';
+$db = 'project-pkl';
 $user = 'root';
 $pass = '';
 
-    $conn = new mysqli('$localhost','$root','','$pkl');
+$conn = new mysqli($host, $user, $pass, $db);
 
-    if($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+if ($conn->connect_error) {
+    die("Koneksi gagal: " . $conn->connect_error);
+}
 ?>
